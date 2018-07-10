@@ -1,0 +1,3 @@
+--add-exports java.base/jdk.internal.misc=io.netty.common
+--add-opens java.base/java.nio=io.netty.common
+-Dio.netty.tryReflectionSetAccessible=true
