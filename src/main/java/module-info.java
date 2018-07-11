@@ -11,6 +11,7 @@ module spring.boot.kafka {
     requires spring.web;
 
     requires java.sql;
+    requires slf4j.api;
 
     opens priv.cp;
 
