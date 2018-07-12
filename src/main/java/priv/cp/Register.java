@@ -11,6 +11,7 @@ import reactor.core.publisher.Mono;
 
 import java.util.Date;
 
+import static org.springframework.web.reactive.function.BodyInserters.fromFormData;
 import static org.springframework.web.reactive.function.BodyInserters.fromObject;
 import static org.springframework.web.reactive.function.server.RequestPredicates.POST;
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;
@@ -30,8 +31,8 @@ public class Register {
             });
 
 
+            return ServerResponse.ok().body(Mono.just("1111"),String.class);
 
-            return ServerResponse.ok().body(BodyInserters.fromObject("1111"));
         });
     }
 
